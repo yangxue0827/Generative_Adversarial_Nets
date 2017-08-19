@@ -52,6 +52,6 @@
 
 # Reference:    
    https://github.com/yangxue0827/DCGAN-tensorflow    
-   (make some small changes to fix the problem when we want to test):   
+   (make some small changes in source code to fix the problem when we want to test):   
    problem1: Modify the 94-97th lines of code in model.py     
    problem2: Modify the range of noise of the function visualize in utils.py
