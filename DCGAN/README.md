@@ -40,14 +40,23 @@
 
 # Testing step:    
    python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces --crop True       
-   ![train_result](samples/train_00_0099.png)       
-   ![train_result](samples/train_01_0199.png)       
-   ![train_result](samples/train_05_0199.png)       
-   ![train_result](samples/train_10_0199.png)       
-   ![train_result](samples/train_25_0199.png)    
-   ![train_result](samples/train_50_0199.png)      
-   ![train_result](samples/train_100_0199.png)     
-   ![train_result](samples/train_200_0199.png)
+   half a epoch
+   ![train_result](samples/train_00_0099.png)    
+   one epoch         
+   ![train_result](samples/train_01_0199.png)     
+   five epoches  
+   ![train_result](samples/train_05_0199.png)    
+   ten epoches         
+   ![train_result](samples/train_10_0199.png)  
+   twenty-five epoches    
+   ![train_result](samples/train_25_0199.png)
+   fifty epoches       
+   ![train_result](samples/train_50_0199.png)    
+   one hundred epoches      
+   ![train_result](samples/train_100_0199.png) 
+   two hundred epoches   
+   ![train_result](samples/train_200_0199.png)    
+   three hundred and twenty-one epoches 
    ![train_result](samples/train_321_0098.png)   
 
 # Reference:    
