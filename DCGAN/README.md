@@ -28,7 +28,7 @@
    "output_height": "The size of the output images to produce [64]"     
    "output_width": "The size of the output images to produce. If None, same value as output_height [None]"     
    "dataset": "The name of dataset [celebA, mnist, lsun]"    
-   "input_fname_pattern": "Glob pattern of filename of input images [*]"     
+   "input_fname_pattern": "Glob pattern of filename of input images [*.jpg]"     
    "checkpoint_dir": "Directory name to save the checkpoints [checkpoint]"     
    "sample_dir": "Directory name to save the image samples [samples]"     
    "train": "True for training, False for testing [False]"     
