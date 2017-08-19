@@ -49,11 +49,11 @@
    ten epoches         
    ![train_result](samples/train_10_0199.png)  
    twenty-five epoches    
-   ![train_result](samples/train_25_0199.png)
+   ![train_result](samples/train_25_0199.png)      
    fifty epoches       
    ![train_result](samples/train_50_0199.png)    
    one hundred epoches      
-   ![train_result](samples/train_100_0199.png) 
+   ![train_result](samples/train_100_0199.png)      
    two hundred epoches   
    ![train_result](samples/train_200_0199.png)    
    three hundred and twenty-one epoches 
