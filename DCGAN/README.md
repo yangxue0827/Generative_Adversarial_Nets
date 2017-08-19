@@ -40,7 +40,7 @@
 
 # Testing step:    
    python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces --crop True       
-   half a epoch
+   half a epoch     
    ![train_result](samples/train_00_0099.png)    
    one epoch         
    ![train_result](samples/train_01_0199.png)     
