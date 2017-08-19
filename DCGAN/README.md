@@ -18,22 +18,22 @@
    samples/*: training and testing results
 
 # Parameters   
-   "epoch": "Epoch to train [25]"
-   "learning_rate": "Learning rate of for adam [0.0002]"
-   "beta1": "Momentum term of adam [0.5]"
-   "train_size": "The size of train images [np.inf]"
-   "batch_size": "The size of batch images [64]"
-   "input_height": "The size of image to use (will be center cropped). [108]"
-   "input_width": "The size of image to use (will be center cropped). If None, same value as input_height [None]"
-   "output_height": "The size of the output images to produce [64]"
-   "output_width": "The size of the output images to produce. If None, same value as output_height [None]"
-   "dataset": "The name of dataset [celebA, mnist, lsun]"
-   "input_fname_pattern": "Glob pattern of filename of input images [*]"
-   "checkpoint_dir": "Directory name to save the checkpoints [checkpoint]"
-   "sample_dir": "Directory name to save the image samples [samples]"
-   "train": "True for training, False for testing [False]"
-   "crop": "True for center cropping first, then resize the images [False]"
-   "visualize": "True for visualizing, False for nothing [False]"    
+   "epoch": "Epoch to train [25]"    
+   "learning_rate": "Learning rate of for adam [0.0002]"     
+   "beta1": "Momentum term of adam [0.5]"    
+   "train_size": "The size of train images [np.inf]"     
+   "batch_size": "The size of batch images [64]"     
+   "input_height": "The size of image to use (will be center cropped). [108]"     
+   "input_width": "The size of image to use (will be center cropped). If None, same value as input_height [None]"      
+   "output_height": "The size of the output images to produce [64]"     
+   "output_width": "The size of the output images to produce. If None, same value as output_height [None]"     
+   "dataset": "The name of dataset [celebA, mnist, lsun]"    
+   "input_fname_pattern": "Glob pattern of filename of input images [*]"     
+   "checkpoint_dir": "Directory name to save the checkpoints [checkpoint]"     
+   "sample_dir": "Directory name to save the image samples [samples]"     
+   "train": "True for training, False for testing [False]"     
+   "crop": "True for center cropping first, then resize the images [False]"     
+   "visualize": "True for visualizing, False for nothing [False]"         
 
 # Train step:    
    python main.py --epoch 3000 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True --crop True      
