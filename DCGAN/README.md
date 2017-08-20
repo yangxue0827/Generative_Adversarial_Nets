@@ -60,7 +60,7 @@
    ![train_result](samples/train_321_0098.png)   
 
 # Reference:    
-   source code: https://github.com/yangxue0827/DCGAN-tensorflow      
+   source code: https://github.com/carpedm20/DCGAN-tensorflow      
    official accounts： http://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
 
    problems: make some small changes in source code to fix the problem when we want to test  
