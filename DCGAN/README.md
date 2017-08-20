@@ -60,10 +60,11 @@
    ![train_result](samples/train_321_0098.png)   
 
 # Reference:    
-   source code: https://github.com/yangxue0827/DCGAN-tensorflow  
+   source code: https://github.com/yangxue0827/DCGAN-tensorflow      
+   official accounts： http://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
 
    problems: make some small changes in source code to fix the problem when we want to test  
 	   problem1: Modify the 94-97th lines of code in model.py     
 	   problem2: Modify the range of noise of the function visualize in utils.py   
 
-   makegirls web: http://make.girls.moe/#/    
+   makegirls web: http://make.girls.moe/#/       
