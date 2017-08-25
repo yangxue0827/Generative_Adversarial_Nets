@@ -36,7 +36,7 @@
    "visualize": "True for visualizing, False for nothing [False]"         
 
 # Train step:    
-   python main.py --epoch 3000 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True      
+   python main.py --epoch 300 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True      
 
 # Testing step:    
    python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces       
