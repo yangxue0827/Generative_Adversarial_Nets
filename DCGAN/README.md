@@ -36,10 +36,10 @@
    "visualize": "True for visualizing, False for nothing [False]"         
 
 # Train step:    
-   python main.py --epoch 3000 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True --crop True      
+   python main.py --epoch 3000 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True      
 
 # Testing step:    
-   python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces --crop True       
+   python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces       
    half a epoch     
    ![train_result](samples/train_00_0099.png)    
    one epoch         
