@@ -3,6 +3,9 @@
 # Requirements:    
    python3.5(2.7) + tensroflow(>1.0) + cv2   
 
+# model   
+   ![model](images/model.png)     
+      
 # File describe    
    cgan_tensorflow.py: main function    
    test/*: test results     
