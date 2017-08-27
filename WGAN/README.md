@@ -91,6 +91,7 @@
 
 
 # Reference:    
-   source code: https://github.com/carpedm20/DCGAN-tensorflow     
-                https://github.com/handspeaker/gan_practice      
+   source code: 
+   https://github.com/carpedm20/DCGAN-tensorflow        
+   https://github.com/handspeaker/gan_practice      
   
