@@ -21,7 +21,8 @@
 
 # Parameters   
    "epoch": "Epoch to train [25]"    
-   "learning_rate": "Learning rate of for adam [0.0002]"     
+   "learning_rate": "Learning rate of for adam [0.0002]"    
+   "beta1": "Momentum term of adam [0.5]"             
    "train_size": "The size of train images [np.inf]"     
    "batch_size": "The size of batch images [64]"     
    "input_height": "The size of image to use (will be center cropped). [28]"     
@@ -91,7 +92,10 @@
 
 
 # Reference:    
-   source code: 
+   code: 
    https://github.com/carpedm20/DCGAN-tensorflow        
-   https://github.com/handspeaker/gan_practice      
+   https://github.com/handspeaker/gan_practice    
+
+   blog:    
+   https://zhuanlan.zhihu.com/p/25071913
   
