@@ -40,7 +40,9 @@
 
 # Train step:    
    python main.py --epoch 300 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True    
-
+   
+   gif：   
+   ![training_gif](samples/training.gif)
    half a epoch     
    ![train_result](samples/train_00_0099.png)    
    one epoch         
