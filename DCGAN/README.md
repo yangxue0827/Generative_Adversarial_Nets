@@ -39,10 +39,8 @@
    "visualize": "True for visualizing, False for nothing [False]"         
 
 # Train step:    
-   python main.py --epoch 300 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True      
+   python main.py --epoch 300 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True    
 
-# Testing step:    
-   python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces       
    half a epoch     
    ![train_result](samples/train_00_0099.png)    
    one epoch         
@@ -61,6 +59,9 @@
    ![train_result](samples/train_200_0199.png)    
    three hundred and twenty-one epoches 
    ![train_result](samples/train_321_0098.png)   
+
+# Testing step:    
+   python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces          
 
 # Reference:    
    source code: https://github.com/carpedm20/DCGAN-tensorflow      
