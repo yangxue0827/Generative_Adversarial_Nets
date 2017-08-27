@@ -12,18 +12,18 @@ from utils import pp, visualize, to_json, show_all_variables
 import tensorflow as tf
 
 flags = tf.app.flags
-flags.DEFINE_integer("epoch", 200, "Epoch to train [25]")
+flags.DEFINE_integer("epoch", 50, "Epoch to train [25]")
 flags.DEFINE_float("learning_rate", 0.0002, "Learning rate of for adam [0.0002]")
 flags.DEFINE_integer("train_size", np.inf, "The size of train images [np.inf]")
 flags.DEFINE_integer("batch_size", 64, "The size of batch images [64]")
-flags.DEFINE_integer("input_height", 96, "The size of image to use (will be center cropped). [108]")
+flags.DEFINE_integer("input_height", 28, "The size of image to use (will be center cropped). [108]")
 flags.DEFINE_integer("input_width", None, "The size of image to use (will be center cropped). If None, same value as input_height [None]")
-flags.DEFINE_integer("output_height", 48, "The size of the output images to produce [64]")
+flags.DEFINE_integer("output_height", 28, "The size of the output images to produce [64]")
 flags.DEFINE_integer("output_width", None, "The size of the output images to produce. If None, same value as output_height [None]")
-flags.DEFINE_string("dataset", "faces", "The name of dataset [celebA, mnist, lsun]")
+flags.DEFINE_string("dataset", "mnist", "The name of dataset [celebA, mnist, lsun]")
 flags.DEFINE_string("input_fname_pattern", "*.jpg", "Glob pattern of filename of input images [*]")
 flags.DEFINE_string("checkpoint_dir", "checkpoint", "Directory name to save the checkpoints [checkpoint]")
-flags.DEFINE_string("sample_dir", "samples", "Directory name to save the image samples [samples]")
+flags.DEFINE_string("sample_dir", "samples1", "Directory name to save the image samples [samples]")
 flags.DEFINE_boolean("train", True, "True for training, False for testing [False]")
 flags.DEFINE_boolean("crop", False, "True for center cropping first, then resize the images [False]")
 flags.DEFINE_boolean("visualize", False, "True for visualizing, False for nothing [False]")
@@ -48,12 +48,13 @@ def main(_):
     if not os.path.exists(FLAGS.sample_dir):
         os.makedirs(FLAGS.sample_dir)
 
+    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
     run_config = tf.ConfigProto()
     run_config.gpu_options.allow_growth=True
 
     with tf.Session(config=run_config) as sess:
         if FLAGS.dataset == 'mnist':
-            dcgan = WGAN(
+            wgan = WGAN(
                 sess,
                 input_width=FLAGS.input_width,
                 input_height=FLAGS.input_height,
@@ -73,7 +74,7 @@ def main(_):
                 mode=FLAGS.mode,
                 LAMBDA=FLAGS.LAMBDA)
         else:
-            dcgan = WGAN(
+            wgan = WGAN(
                 sess,
                 input_width=FLAGS.input_width,
                 input_height=FLAGS.input_height,
@@ -95,20 +96,20 @@ def main(_):
         show_all_variables()
 
         if FLAGS.train:
-            dcgan.train(FLAGS)
+            wgan.train(FLAGS)
         else:
-            if not dcgan.load(FLAGS.checkpoint_dir)[0]:
+            if not wgan.load(FLAGS.checkpoint_dir)[0]:
                 raise Exception("[!] Train a model first, then run test mode")
 
-        # to_json("./web/js/layers.js", [dcgan.h0_w, dcgan.h0_b, dcgan.g_bn0],
-        #                 [dcgan.h1_w, dcgan.h1_b, dcgan.g_bn1],
-        #                 [dcgan.h2_w, dcgan.h2_b, dcgan.g_bn2],
-        #                 [dcgan.h3_w, dcgan.h3_b, dcgan.g_bn3],
-        #                 [dcgan.h4_w, dcgan.h4_b, None])
+        # to_json("./web/js/layers.js", [wgan.h0_w, wgan.h0_b, wgan.g_bn0],
+        #                 [wgan.h1_w, wgan.h1_b, wgan.g_bn1],
+        #                 [wgan.h2_w, wgan.h2_b, wgan.g_bn2],
+        #                 [wgan.h3_w, wgan.h3_b, wgan.g_bn3],
+        #                 [wgan.h4_w, wgan.h4_b, None])
 
         # Below is codes for visualization
         OPTION = 1
-        visualize(sess, dcgan, FLAGS, OPTION)
+        visualize(sess, wgan, FLAGS, OPTION)
 
 
 if __name__ == '__main__':
