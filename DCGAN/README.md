@@ -4,7 +4,7 @@
    python3.5(2.7) + tensroflow(>1.0)    
    
 # model    
-   ![model](images/generator model.png)     
+   ![model](images/generator_model.png)     
 
 # File describe    
    download.py: download datasets like mnist, lsun, celebA    
