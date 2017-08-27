@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import division, print_function, absolute_import
 import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import scipy.misc
 import numpy as np
 
