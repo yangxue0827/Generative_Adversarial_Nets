@@ -14,7 +14,7 @@
    dcgan_keras.py: dcgan code wrote by keras   
    lbpcascade_animeface.xml: The configuration file of cropping avatar
    data/*: dataset     
-   checkpoint/*: model after about 1000000 iterations    
+   checkpoint/*: model after about 300+ epoches    
    samples/*: training and testing results
 
 # Parameters   
