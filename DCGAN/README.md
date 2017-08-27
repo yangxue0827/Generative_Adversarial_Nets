@@ -1,7 +1,10 @@
 # Deep convolutional Generative Adversarial Nets
 
 # Requirements:    
-   python3.5(2.7) + tensroflow(>1.0) 
+   python3.5(2.7) + tensroflow(>1.0)    
+   
+# model    
+   ![model](images/model.png)     
 
 # File describe    
    download.py: download datasets like mnist, lsun, celebA    
