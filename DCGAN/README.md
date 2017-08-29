@@ -42,26 +42,7 @@
    python main.py --epoch 300 --batch_size 256 --input_height 96 --output_height 48 --dataset faces --train True    
    
    training gif：   
-   ![training_gif](samples/training.gif)    
-   
-   half a epoch     
-   ![train_result](samples/train_00_0099.png)    
-   one epoch         
-   ![train_result](samples/train_01_0199.png)     
-   five epoch  
-   ![train_result](samples/train_05_0199.png)    
-   ten epoch             
-   ![train_result](samples/train_10_0199.png)  
-   twenty-five epoch    
-   ![train_result](samples/train_25_0199.png)      
-   fifty epoch       
-   ![train_result](samples/train_50_0199.png)    
-   one hundred epoch      
-   ![train_result](samples/train_100_0199.png)      
-   two hundred epoch      
-   ![train_result](samples/train_200_0199.png)    
-   three hundred and twenty-one epoch     
-   ![train_result](samples/train_321_0098.png)   
+   ![training_gif](samples/training.gif)        
 
 # Testing step:    
    python main.py --batch_size 256 --input_height 96 --output_height 48 --dataset faces          
