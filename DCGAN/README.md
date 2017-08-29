@@ -48,19 +48,19 @@
    ![train_result](samples/train_00_0099.png)    
    one epoch         
    ![train_result](samples/train_01_0199.png)     
-   five epoches  
+   five epoch  
    ![train_result](samples/train_05_0199.png)    
-   ten epoches         
+   ten epoch             
    ![train_result](samples/train_10_0199.png)  
-   twenty-five epoches    
+   twenty-five epoch    
    ![train_result](samples/train_25_0199.png)      
-   fifty epoches       
+   fifty epoch       
    ![train_result](samples/train_50_0199.png)    
-   one hundred epoches      
+   one hundred epoch      
    ![train_result](samples/train_100_0199.png)      
-   two hundred epoches   
+   two hundred epoch      
    ![train_result](samples/train_200_0199.png)    
-   three hundred and twenty-one epoches 
+   three hundred and twenty-one epoch     
    ![train_result](samples/train_321_0098.png)   
 
 # Testing step:    
