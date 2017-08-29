@@ -52,15 +52,15 @@
    ![train_result](samples_mnist/train_00_0200.png)    
    one epoch         
    ![train_result](samples_mnist/train_01_0107.png)     
-   five epoches  
+   five epoch  
    ![train_result](samples_mnist/train_05_0135.png)    
-   fifteen epoches         
+   fifteen epoch            
    ![train_result](samples_mnist/train_15_0005.png)  
-   thirty epoches    
+   thirty epoch       
    ![train_result](samples_mnist/train_30_0010.png)      
-   forty epoches       
+   forty epoch          
    ![train_result](samples_mnist/train_40_1080.png)    
-   fifty epoches      
+   fifty epoch         
    ![train_result](samples_mnist/train_49_1043.png)      
 
 # MNIST dataset testing step:    
@@ -69,20 +69,16 @@
 # faces dataset train step:    
    python main.py --epoch 200 --batch_size 64 --input_height 96 --output_height 48 --dataset faces --train True --sample_dir samples_faces        
        
-   half a epoch     
-   ![train_result](samples_faces/train_00_0200.png)    
-   one epoch         
-   ![train_result](samples_faces/train_01_0107.png)     
-   five epoches  
-   ![train_result](samples_faces/train_05_0135.png)    
-   fifteen epoches         
-   ![train_result](samples_faces/train_15_0005.png)  
-   thirty epoches    
-   ![train_result](samples_faces/train_30_0010.png)      
-   forty epoches       
-   ![train_result](samples_faces/train_40_1080.png)    
-   fifty epoches      
-   ![train_result](samples_faces/train_50_0199.png)      
+   half a epoch                                                                      one epoch     
+   ![train_result](samples_faces/train_00_0200.png)                 ![train_result](samples_faces/train_01_0600.png)     
+   five epoch                                                                        ten epoch
+   ![train_result](samples_faces/train_04_0600.png)                 ![train_result](samples_faces/train_09_0600.png)  
+   twenty epoch                                                                      fifty epoch
+   ![train_result](samples_faces/train_19_0600.png)                 ![train_result](samples_faces/train_49_0600.png)    
+   one hundred epoch                                                            one hundred fifty epoch
+   ![train_result](samples_faces/train_99_0600.png)                 ![train_result](samples_faces/train_149_0600.png)     
+   two hundred epoch        
+   ![train_result](samples_faces/train_199_0600.png)      
 
 # faces dataset testing step:    
    python main.py --batch_size 64 --input_height 96 --output_height 48 --dataset faces  --sample_dir samples_faces 
